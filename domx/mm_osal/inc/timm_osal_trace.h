@@ -156,29 +156,29 @@ extern "C"
 /**
 * TIMM_OSAL_ErrorExt() -- Fatal errors
 */
-#define TIMM_OSAL_ErrorExt(tracegrp, fmt, ...)  __TIMM_OSAL_Trace(1, tracegrp, "ERROR: "fmt, ##__VA_ARGS__)
+#define TIMM_OSAL_ErrorExt(tracegrp, fmt, ...)  __TIMM_OSAL_Trace(1, tracegrp, "ERROR: " fmt, ##__VA_ARGS__)
 
 /**
 * TIMM_OSAL_WarningExt() -- Warnings that are useful to know about
 */
-#define TIMM_OSAL_WarningExt(tracegrp, fmt, ...)  __TIMM_OSAL_Trace(2, tracegrp, "WARNING: "fmt, ##__VA_ARGS__)
+#define TIMM_OSAL_WarningExt(tracegrp, fmt, ...)  __TIMM_OSAL_Trace(2, tracegrp, "WARNING: " fmt, ##__VA_ARGS__)
 
 /**
 * TIMM_OSAL_InfoExt() -- general information
 */
-#define TIMM_OSAL_InfoExt(tracegrp, fmt, ...)  __TIMM_OSAL_Trace(3, tracegrp, "INFO: "fmt, ##__VA_ARGS__)
+#define TIMM_OSAL_InfoExt(tracegrp, fmt, ...)  __TIMM_OSAL_Trace(3, tracegrp, "INFO: " fmt, ##__VA_ARGS__)
 
 /**
 * TIMM_OSAL_DebugExt() -- most-commonly used statement for us developers
 */
-#define TIMM_OSAL_DebugExt(tracegrp, fmt, ...)  __TIMM_OSAL_Trace(4, tracegrp, "TRACE: "fmt, ##__VA_ARGS__)
+#define TIMM_OSAL_DebugExt(tracegrp, fmt, ...)  __TIMM_OSAL_Trace(4, tracegrp, "TRACE: " fmt, ##__VA_ARGS__)
 
 /**
 * TIMM_OSAL_EnteringExt() -- "ENTERING <function>" statements
 * TIMM_OSAL_ExitingExt()  -- "EXITING <function>" statements
 */
-#define TIMM_OSAL_EnteringExt(tracegrp, fmt, ...)  __TIMM_OSAL_Trace(5, tracegrp, "ENTER: "fmt, ##__VA_ARGS__)
-#define TIMM_OSAL_ExitingExt(tracegrp, fmt, ...)  __TIMM_OSAL_Trace(5, tracegrp, "EXIT: "fmt, ##__VA_ARGS__)
+#define TIMM_OSAL_EnteringExt(tracegrp, fmt, ...)  __TIMM_OSAL_Trace(5, tracegrp, "ENTER: " fmt, ##__VA_ARGS__)
+#define TIMM_OSAL_ExitingExt(tracegrp, fmt, ...)  __TIMM_OSAL_Trace(5, tracegrp, "EXIT: " fmt, ##__VA_ARGS__)
 
 
 #ifdef __cplusplus
