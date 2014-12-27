@@ -9,7 +9,7 @@ LOCAL_ARM_MODE := arm
 LOCAL_SRC_FILES:= \
 	tee_client_api_linux_driver.c
 
-LOCAL_CFLAGS += -DLINUX
+LOCAL_CFLAGS += -DLINUX  -fno-strict-aliasing
 LOCAL_CFLAGS += -D__ANDROID32__
 
 ifdef S_VERSION_BUILD
