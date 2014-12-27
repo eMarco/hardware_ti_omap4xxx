@@ -33,6 +33,7 @@ BUILD_HEAPTRACKED_SHARED_LIBRARY:=$(BUILD_SHARED_LIBRARY)
 BUILD_HEAPTRACKED_EXECUTABLE:= $(BUILD_EXECUTABLE)
 endif
 
+LOCAL_CFLAGS := -fno-strict-aliasing
 include $(call first-makefiles-under,$(LOCAL_PATH))
 
 endif # ifeq ($(strip $(TARGET_BOARD_PLATFORM_VARIANT)),)

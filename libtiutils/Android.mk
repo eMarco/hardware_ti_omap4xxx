@@ -24,7 +24,7 @@ LOCAL_C_INCLUDES += \
 	hardware/ti/omap4xxx/domx/omx_core/inc \
 	hardware/ti/omap4xxx/domx/mm_osal/inc
 	
-LOCAL_CFLAGS += -fno-short-enums 
+LOCAL_CFLAGS += -fno-short-enums -fno-strict-aliasing
 
 # LOCAL_CFLAGS +=
 

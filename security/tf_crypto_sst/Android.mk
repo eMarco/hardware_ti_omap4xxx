@@ -15,7 +15,7 @@ LOCAL_SRC_FILES := \
 	pkcs11_object.c \
 	pkcs11_session.c
 
-LOCAL_CFLAGS += -DLINUX
+LOCAL_CFLAGS += -DLINUX  -fno-strict-aliasing
 LOCAL_CFLAGS += -D__ANDROID32__
 
 ifdef S_VERSION_BUILD

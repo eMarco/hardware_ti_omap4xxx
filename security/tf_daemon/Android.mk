@@ -13,7 +13,7 @@ LOCAL_SRC_FILES := \
 	smc_properties_parser.c \
 	lib_manifest2.c
 
-LOCAL_CFLAGS += -DLINUX
+LOCAL_CFLAGS += -DLINUX  -fno-strict-aliasing
 LOCAL_CFLAGS += -D__ANDROID32__
 LOCAL_CFLAGS += -DSUPPORT_DELEGATION_EXTENSION
 
